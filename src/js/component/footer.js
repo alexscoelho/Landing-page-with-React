@@ -5,7 +5,7 @@ export function Footer() {
 	return (
 		<div className="card bg-dark">
 			<div className="card-header text-white d-flex justify-content-center">
-				Featured
+				Copyright
 			</div>
 		</div>
 	);

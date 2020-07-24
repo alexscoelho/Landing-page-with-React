@@ -20,7 +20,7 @@ export function Nav(props) {
 				<span className="navbar-toggler-icon" />
 			</button>
 			<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div className="navbar-nav">
+				<div className="navbar-nav ml-auto">
 					{links.map((link, index) => (
 						<li key={index} className="nav-item active">
 							<a

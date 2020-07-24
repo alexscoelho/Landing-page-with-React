@@ -61,7 +61,7 @@ export function Home() {
 	];
 
 	return (
-		<div className="container-fluid">
+		<div>
 			<Nav brand="React" links={menu} />
 			<div>
 				<Jumbotron
@@ -71,7 +71,7 @@ export function Home() {
 					url="#"
 				/>
 			</div>
-			<div className="row">
+			<div className="row mb-2">
 				{cards.map((card, index) => (
 					<div className="col-3" key={index}>
 						<Card
