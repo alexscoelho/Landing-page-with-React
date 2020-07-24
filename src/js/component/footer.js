@@ -2,5 +2,11 @@ import React from "react";
 
 //create your first component
 export function Footer() {
-	return <div>Footer</div>;
+	return (
+		<div className="card bg-dark">
+			<div className="card-header text-white d-flex justify-content-center">
+				Featured
+			</div>
+		</div>
+	);
 }

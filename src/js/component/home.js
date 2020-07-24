@@ -1,6 +1,6 @@
 import React from "react";
 
-import { NavNar } from "./navbar.js";
+import { Nav } from "./navbar.js";
 import { Jumbotron } from "./jumbotron.js";
 import { Card } from "./card.js";
 import { Footer } from "./footer.js";
@@ -41,10 +41,36 @@ export function Home() {
 			url: "#"
 		}
 	];
+	let menu = [
+		{
+			text: "Home",
+			url: "#"
+		},
+		{
+			text: "About",
+			url: "#"
+		},
+		{
+			text: "Service",
+			url: "#"
+		},
+		{
+			text: "Contact",
+			url: "#"
+		}
+	];
+
 	return (
 		<div className="container-fluid">
-			<NavNar />
-			<Jumbotron />
+			<Nav brand="React" links={menu} />
+			<div>
+				<Jumbotron
+					title="A warm welcome"
+					body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum in metus quis pellentesque."
+					buttonText="Call to action"
+					url="#"
+				/>
+			</div>
 			<div className="row">
 				{cards.map((card, index) => (
 					<div className="col-3" key={index}>
